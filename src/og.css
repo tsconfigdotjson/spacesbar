@@ -31,8 +31,9 @@ body.og::before {
 }
 
 .og-icon {
-  width: 96px;
-  height: 96px;
+  width: 120px;
+  height: 120px;
+  margin: -12px;
   filter: drop-shadow(0 14px 30px rgb(125 92 255 / 0.55));
 }
 

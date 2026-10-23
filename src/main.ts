@@ -3,8 +3,8 @@ import "@fontsource-variable/geist-mono";
 import "./style.css";
 import { loop, renderMenu, RoomDemo, setDemo } from "./ui";
 
-// The Pages deploy copies the latest release's zip next to the page.
-const DOWNLOAD_URL = `${import.meta.env.BASE_URL}SpacesBar.zip`;
+// The Pages deploy copies the latest release's disk image next to the page.
+const DOWNLOAD_URL = `${import.meta.env.BASE_URL}SpacesBar.dmg`;
 
 /** The desktop's design size: everything is laid out for it, then zoomed to fit. */
 const DESIGN = { width: 1400, height: 860 };

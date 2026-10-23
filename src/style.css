@@ -361,9 +361,10 @@ svg {
 }
 
 .doc-icon {
-  width: 56px;
-  height: 56px;
-  filter: drop-shadow(0 8px 18px rgb(125 92 255 / 0.45));
+  width: 72px;
+  height: 72px;
+  margin: -8px;
+  filter: drop-shadow(0 8px 18px rgb(125 92 255 / 0.35));
 }
 
 h1 {

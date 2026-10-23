@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- The SpacesBar icon: the menu bar glyph (five bars) on a violet tile, on
+       Apple's macOS grid (an 824 pt tile on a 1024 canvas). Rendered to
+       AppIcon.icns by design/render.mjs; the site uses it as is. -->
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#a68cff"/>
+      <stop offset="0.5" stop-color="#7d5cff"/>
+      <stop offset="1" stop-color="#4521c2"/>
+    </linearGradient>
+    <radialGradient id="warm" cx="0.9" cy="1" r="0.75">
+      <stop offset="0" stop-color="#ff7ad1" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff7ad1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sheen" cx="0.25" cy="0" r="0.9">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#e9e2ff"/>
+    </linearGradient>
+    <filter id="tileShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000" flood-opacity="0.32"/>
+    </filter>
+    <filter id="barShadow" x="-50%" y="-20%" width="200%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#2a0c8a" flood-opacity="0.5"/>
+    </filter>
+    <clipPath id="tile"><rect x="100" y="100" width="824" height="824" rx="185"/></clipPath>
+  </defs>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#body)" filter="url(#tileShadow)"/>
+  <g clip-path="url(#tile)">
+    <rect x="100" y="100" width="824" height="824" fill="url(#warm)"/>
+    <rect x="100" y="100" width="824" height="824" fill="url(#sheen)"/>
+  </g>
+  <rect x="102" y="102" width="820" height="820" rx="183" fill="none" stroke="#fff" stroke-opacity="0.22" stroke-width="4"/>
+  <!-- The glyph's bars on its 20 pt grid (heights 4, 9, 15, 9, 4), at 30×. -->
+  <g fill="url(#bar)" filter="url(#barShadow)">
+    <rect x="272" y="452" width="60" height="120" rx="30"/>
+    <rect x="377" y="377" width="60" height="270" rx="30"/>
+    <rect x="482" y="287" width="60" height="450" rx="30"/>
+    <rect x="587" y="377" width="60" height="270" rx="30"/>
+    <rect x="692" y="452" width="60" height="120" rx="30"/>
+  </g>
+</svg>
