@@ -21,3 +21,5 @@ Download buttons link to, and `scripts/appcast.mjs` turns the releases into
 Releases come from the app repo's `scripts/release.sh`, which uploads the
 notarized disk image and a `sparkle.json` with its EdDSA signature. Don't publish
 releases here by hand: without `sparkle.json` they're left out of the appcast.
+The `github-pages` environment allows deploys from `main` and from `v*` tags,
+which release-triggered runs check out.
