@@ -1,0 +1,29 @@
+<!doctype html>
+<!-- The Open Graph card, 1200 × 630. `npm run og` renders it to public/og.jpg. -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SpacesBar card</title>
+  </head>
+  <body class="og">
+    <header class="menubar og-bar">
+      <span class="mb-app"><span class="mb-glyph"></span>SpacesBar</span>
+      <div class="mb-status">
+        <span class="mb-icon is-active" id="status-icon">
+          <svg viewBox="0 0 20 20"><g fill="currentColor"><rect x="2" y="8" width="2" height="4" rx="1"/><rect x="5.5" y="5.5" width="2" height="9" rx="1"/><rect x="9" y="2.5" width="2" height="15" rx="1"/><rect x="12.5" y="5.5" width="2" height="9" rx="1"/><rect x="16" y="8" width="2" height="4" rx="1"/></g></svg>
+        </span>
+        <span class="mb-sys mb-battery"><i></i></span>
+        <span class="mb-clock">Fri 9:41 PM</span>
+      </div>
+    </header>
+    <div class="rings og-rings"><i></i><i></i><i></i><i></i></div>
+    <section class="og-copy">
+      <img class="og-icon" src="/favicon.svg" alt="" />
+      <h1>SpacesBar</h1>
+      <p>X Spaces in the macOS menu bar.</p>
+      <div class="tags"><span>free</span><span>native</span><span>macOS 14+</span><span>Rust + SwiftUI</span></div>
+    </section>
+    <div class="og-room" id="room-panel"></div>
+    <script type="module" src="/src/og.ts"></script>
+  </body>
+</html>

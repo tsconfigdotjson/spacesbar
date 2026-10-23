@@ -1,0 +1,69 @@
+body.og {
+  width: 1200px;
+  height: 630px;
+  overflow: hidden;
+  position: relative;
+}
+
+body.og::before {
+  position: absolute;
+  background:
+    radial-gradient(46% 60% at 80% 0%, rgb(125 92 255 / 0.42), transparent 70%),
+    radial-gradient(40% 50% at 0% 100%, rgb(255 181 71 / 0.16), transparent 70%),
+    radial-gradient(rgb(238 231 220 / 0.07) 1px, transparent 1.2px) 0 0 / 22px 22px,
+    var(--bg);
+}
+
+.og-bar {
+  position: absolute;
+}
+
+.og-rings {
+  left: 1031px;
+  top: 15px;
+}
+
+.og-copy {
+  position: absolute;
+  left: 80px;
+  top: 150px;
+  width: 600px;
+}
+
+.og-icon {
+  width: 96px;
+  height: 96px;
+  filter: drop-shadow(0 14px 30px rgb(125 92 255 / 0.55));
+}
+
+.og-copy h1 {
+  margin-top: 26px;
+  font-size: 92px;
+  letter-spacing: -0.045em;
+}
+
+.og-copy p {
+  margin: 14px 0 0;
+  font-size: 30px;
+  letter-spacing: -0.01em;
+  color: var(--muted);
+}
+
+.og-copy .tags {
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.og-copy .tags span {
+  padding: 7px 12px;
+  border-radius: 7px;
+  font-size: 17px;
+}
+
+.og-room {
+  position: absolute;
+  right: 92px;
+  top: 92px;
+  transform: rotate(-2deg);
+  transform-origin: 50% 0;
+}

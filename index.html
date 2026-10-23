@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SpacesBar — X Spaces in the macOS menu bar</title>
+    <meta name="description" content="A free, native Mac app for listening to and talking in X Spaces from the menu bar." />
+    <meta name="theme-color" content="#0c0a10" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SpacesBar" />
+    <meta property="og:description" content="X Spaces in the macOS menu bar. Free and native." />
+    <meta property="og:image" content="https://tsconfigdotjson.github.io/spacesbar/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <!-- The page is a Mac desktop: the menu bar is the nav, the waveform is the app's own icon. -->
+    <header class="menubar">
+      <span class="mb-app"><span class="mb-glyph" aria-hidden="true"></span>SpacesBar</span>
+      <nav class="mb-items">
+        <a data-download href="#">Download</a>
+      </nav>
+      <div class="mb-status">
+        <button class="mb-icon is-active" id="status-icon" aria-label="Toggle the SpacesBar menu" aria-expanded="true">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><g fill="currentColor"><rect x="2" y="8" width="2" height="4" rx="1"/><rect x="5.5" y="5.5" width="2" height="9" rx="1"/><rect x="9" y="2.5" width="2" height="15" rx="1"/><rect x="12.5" y="5.5" width="2" height="9" rx="1"/><rect x="16" y="8" width="2" height="4" rx="1"/></g></svg>
+        </button>
+        <span class="mb-sys" aria-hidden="true">
+          <svg viewBox="0 0 20 20"><path fill="currentColor" d="M10 15.6l2.2-2.6a3 3 0 0 0-4.4 0zM5.4 10.2l1.4 1.6a4.4 4.4 0 0 1 6.4 0l1.4-1.6a6.5 6.5 0 0 0-9.2 0zM2.6 7l1.4 1.6a8.5 8.5 0 0 1 12 0L17.4 7a10.6 10.6 0 0 0-14.8 0z"/></svg>
+        </span>
+        <span class="mb-sys mb-battery" aria-hidden="true"><i></i></span>
+        <time class="mb-clock" id="clock"></time>
+      </div>
+    </header>
+
+    <main class="desk" id="desk">
+      <div class="rings" id="rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+      <article class="window readme" id="readme">
+        <div class="titlebar" data-drag>
+          <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="wtitle">README.md — spacesbar</span>
+        </div>
+        <div class="doc">
+          <header class="doc-head">
+            <img class="doc-icon" src="/favicon.svg" alt="" width="56" height="56" />
+            <div>
+              <h1>SpacesBar</h1>
+              <p class="tags"><span>free</span><span>native</span><span>macOS 14+</span><span>arm64</span></p>
+            </div>
+          </header>
+          <p class="blurb">X Spaces in the menu bar. Listen while you work, ask for the stage, talk. A real Mac app, not a web view in a window.</p>
+          <div class="get">
+            <a class="btn" data-download href="#">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 2.5a1 1 0 0 1 1 1v8.1l2.8-2.8a1 1 0 1 1 1.4 1.4l-4.5 4.5a1 1 0 0 1-1.4 0L4.8 10.2a1 1 0 1 1 1.4-1.4L9 11.6V3.5a1 1 0 0 1 1-1zM4 16a1 1 0 0 0 0 2h12a1 1 0 1 0 0-2z"/></svg>
+              SpacesBar.zip
+            </a>
+            <span class="sig">Developer ID signed<br />notarized &amp; stapled</span>
+          </div>
+          <h2>## how it works</h2>
+          <dl class="spec">
+            <dt>list</dt><dd>fleetline + UsersByRestIds, as x.com's Spacebar</dd>
+            <dt>listen</dt><dd>HLS; the stream's ID3 audio levels drive the glow</dd>
+            <dt>speak</dt><dd>WebRTC via Janus; the delayed HLS copy mutes</dd>
+            <dt>login</dt><dd>x.com's own page; only the session cookies, in Keychain</dd>
+            <dt>core</dt><dd>Rust · tokio · reqwest/rustls → UniFFI → Swift</dd>
+            <dt>ui</dt><dd>SwiftUI, with Core Animation for anything that moves</dd>
+            <dt>dock</dt><dd>none <span class="c">// LSUIElement</span></dd>
+            <dt>telemetry</dt><dd>none</dd>
+          </dl>
+          <p class="hint"><span class="c">//</span> The menu and room here are the app's UI rebuilt in HTML. Click the mic.</p>
+          <p class="legal">Not affiliated with X Corp.</p>
+        </div>
+      </article>
+
+      <div class="room-slot" id="room-panel"></div>
+      <div class="hero-menu" id="hero-menu"></div>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
