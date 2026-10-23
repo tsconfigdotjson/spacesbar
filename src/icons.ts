@@ -18,7 +18,7 @@ function sealPath(): string {
 
 export const icon = {
   waveform: svg(
-    '<rect x="2" y="8" width="2" height="4" rx="1"/><rect x="5.5" y="5.5" width="2" height="9" rx="1"/><rect x="9" y="2.5" width="2" height="15" rx="1"/><rect x="12.5" y="5.5" width="2" height="9" rx="1"/><rect x="16" y="8" width="2" height="4" rx="1"/>',
+    '<rect x="2" y="7.67" width="1.56" height="4.65" rx=".78"/><rect x="4.89" y="4.19" width="1.56" height="11.62" rx=".78"/><rect x="7.78" y="1.06" width="1.56" height="17.88" rx=".78"/><rect x="10.66" y="5.31" width="1.56" height="9.39" rx=".78"/><rect x="13.55" y="2.89" width="1.56" height="14.22" rx=".78"/><rect x="16.44" y="6.88" width="1.56" height="6.24" rx=".78"/>',
   ),
   flame: svg('<path d="M10.6 1.5c.4 3-1.6 4.6-3 6.3C6.2 9.4 5 11 5 13.1 5 16 7.3 18.5 10 18.5s5-2.3 5-5.3c0-2.6-1.4-4-2.3-4.9.1 1.6-.5 2.8-1.6 3.3.6-3.7-.7-7.6-.5-10.1z"/>'),
   refresh: svg('<path d="M16 10a6 6 0 1 1-1.8-4.3"/><path d="M15.5 2.5v4h-4"/>', true),

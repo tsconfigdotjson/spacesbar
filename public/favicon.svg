@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="96 96 832 832">
-  <!-- The SpacesBar icon: the menu bar glyph (five bars) on a violet tile, on
+  <!-- The SpacesBar icon: the menu bar glyph on a violet tile, on
        Apple's macOS grid (an 824 pt tile on a 1024 canvas). Rendered to
        AppIcon.icns by design/render.mjs; the site uses it as is. -->
   <defs>
@@ -34,12 +34,14 @@
     <rect x="100" y="100" width="824" height="824" fill="url(#sheen)"/>
   </g>
   <rect x="102" y="102" width="820" height="820" rx="183" fill="none" stroke="#fff" stroke-opacity="0.22" stroke-width="4"/>
-  <!-- The glyph's bars on its 20 pt grid (heights 4, 9, 15, 9, 4), at 30×. -->
+  <!-- SF Symbols' "waveform" (semibold), the menu bar icon: its six bars
+       measured from the symbol and redrawn as rounded rects. -->
   <g fill="url(#bar)" filter="url(#barShadow)">
-    <rect x="272" y="452" width="60" height="120" rx="30"/>
-    <rect x="377" y="377" width="60" height="270" rx="30"/>
-    <rect x="482" y="287" width="60" height="450" rx="30"/>
-    <rect x="587" y="377" width="60" height="270" rx="30"/>
-    <rect x="692" y="452" width="60" height="120" rx="30"/>
+    <rect x="280.2" y="444.6" width="45.1" height="134.8" rx="22.5"/>
+    <rect x="364.0" y="343.7" width="45.1" height="336.6" rx="22.5"/>
+    <rect x="447.8" y="253.0" width="45.1" height="517.9" rx="22.5"/>
+    <rect x="531.1" y="376.0" width="45.1" height="271.9" rx="22.5"/>
+    <rect x="614.9" y="306.0" width="45.1" height="412.1" rx="22.5"/>
+    <rect x="698.7" y="421.6" width="45.1" height="180.8" rx="22.5"/>
   </g>
 </svg>
